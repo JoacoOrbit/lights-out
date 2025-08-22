@@ -25,6 +25,7 @@ main {
     align-items: center;
     height: 100vh;
     /* scroll-snap-align: start; */
+    position: relative;
 }
 
 .game-board{
@@ -40,7 +41,30 @@ main {
     background-image: url('../images/out.png');
     background-size: cover;
 }
+.board-piece:hover{
+    scale: 1.1;
+}
+.board-piece:active{
+    scale: 1.0;
+}
 
 .light {
     background-image: url('../images/light.png');
+}
+
+.win-alert{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #313c5f89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+
+.hidden {
+    display: none;
 }
